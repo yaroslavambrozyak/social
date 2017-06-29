@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ScorpionsSocial</string>
+    <string name="edit_login">Логін</string>
+    <string name="edit_password">Пароль</string>
+    <string name="button_login">Увійти</string>
+    <string name="button_register">Зареєструватися</string>
+    <string name="edit_email">Email</string>
+    <string name="edit_name">Ім\'я</string>
+    <string name="edit_surname">Прізвище</string>
+    <string name="edit_confirm_password">Підтвердіть пароль</string>
+    <string name="sign_button">Зареєструватися</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="friends_text">Друзі</string>
+    <string name="text_message">Повідомлення</string>
+    <string name="text_settings">Налаштування</string>
+    <string name="text_logout">Вихід</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+    <string name="edit_bday">День народження</string>
+    <string name="edit_mobile">Мобільний телефон</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="edit_chat_message">Ваше повідомлення</string>
+
+    <string name="error_request">Сталася помилка</string>
+    <string name="title_activity_chat_room">ChatRoomActivity</string>
+</resources>

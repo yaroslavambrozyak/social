@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yaroslav.scorpionssocial">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppDefault">
+        <activity
+            android:name=".view.MainActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.LoginActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".view.RegistrationActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".view.UserActivity"
+
+            android:theme="@style/AppDefault.Transparent" />
+        <activity
+            android:name=".view.FriendsActivity"
+            android:label="@string/friends_text"
+            android:noHistory="true"
+            android:theme="@style/AppDefault" />
+        <activity
+            android:name=".view.ConversationActivity"
+            android:label="@string/text_message"
+            android:noHistory="true"
+            android:theme="@style/AppDefault" />
+        <activity
+            android:name=".view.SettingsActivity"
+            android:label="@string/text_settings"
+            android:noHistory="true"
+            android:theme="@style/AppDefault" />
+        <activity
+            android:name=".view.ChatActivity"
+            android:theme="@style/AppDefault">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.yaroslav.scorpionssocial.view.ConversationActivity" />
+        </activity>
+        <service android:name=".network.SignalRService"/>
+    </application>
+
+</manifest>
